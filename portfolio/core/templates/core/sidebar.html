@@ -1,0 +1,22 @@
+{% load static %}
+
+<div class="border-right border-warning h-100">
+  <div class="text-center">
+    <img src="{% static 'img/img2.jpg' %}" alt="profile_pic" class="img-fluid rounded-circle mt-5" width="100px" height="100px">
+  </div>
+  <h3 class="text-center text-light mt-3 font_popins">Sheraram Prajapat</h3>
+  <div class="text-center social-icons">
+    <a href="https://www.instagram.com/sheraramprajapat1998/" target="_blank" class="fab fa-instagram i-color mr-3"></a>
+    <a href="mailto:sheraramprajapat1998@gmail.com" target="_blank" class="fas fa-envelope i-color mr-3"></a>
+    <a href="www.linkedin.com/in/SheraramPrajapat1998" target="_blank" class="fab fa-linkedin i-color mr-3"></a>
+    <a href="https://github.com/SheraramPrajapat1998/" target="_blank" class="fab fa-github i-color mr-3"></a>
+  </div>
+  <hr class="border-light">
+  <nav class="nav flex-column text-center">
+    <a href="{% url 'core:home' %}" class="nav-link {{ home }}"><i class="fas fa-home"></i>&nbsp; Home</a>
+    <a href="{% url 'skills:skills' %}" class="nav-link {{ skill }}"><i class="fas fa-cogs"></i>&nbsp; Skills</a>
+    <a href="{% url 'education:education' %}" class="nav-link {{ education }}"><i class="fas fa-graduation-cap"></i>&nbsp; Education</a>
+    <a href="{% url 'projects:project_list' %}" class="nav-link {{ project_active }}"><i class="fas fa-file"></i>&nbsp; Projects</a>
+    <a href="{% url 'contact:contact' %}" class="nav-link {{ contact }}"><i class="fas fa-envelope"></i>&nbsp; Contact</a>
+  </nav> 
+</div>

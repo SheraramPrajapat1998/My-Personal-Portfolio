@@ -1,0 +1,53 @@
+body{
+  margin: 0;
+}
+
+html, body{
+  height: 100%;
+}
+
+.container-fluid{
+  min-height: 100%;
+}
+
+.i-color{
+  color: chartreuse;
+}
+
+.social-icons a:hover{
+  color: silver;
+}
+
+a.nav-link{
+  color: whitesmoke;
+}
+
+a.nav-link:hover{
+  color: black;
+  background-color: #e9cd79;
+}
+
+a.nav-link.active{
+  color: black;
+  background-color: #ffc107;
+  font-weight: bold;
+}
+
+.active{
+  background-color: yellow;
+}
+
+.font_popins{
+  font-family: 'Poppins', sans-serif;
+}
+
+.education span{
+  background-color: #E4EDE9;
+  font-family: 'Raleway', sans-serif;
+}
+
+.other_skill{
+  box-shadow: 1px 2px 30px 2px rgba(255, 255, 255, 0.5); 
+  background-color: #fffa;
+  font-weight: bold;
+}

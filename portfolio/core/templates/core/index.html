@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+  <div class="mt-5">
+    <div class="text-center">
+      <img src="{% static 'img/img-1.jpg' %}" class="img-thumbnail" alt="ProfilePic" width="250px" height="150px">
+    </div>
+    <div class="mt-5 text-white mx-5 text-justify">
+      <h1 class="font-weight-bold font_popins">Hello,</h1>
+      <div class="px-4" style="line-height: 2rem;">
+        <p style="text-indent: 100px;">I'm <b class="text-warning">Sheraram Prajapat</b>.
+          I am a creative, hardworking, and energetic person. 
+          I love developing new websites and webpages. Also, I am eager to learn new skills and technologies. 
+        </p>
+      </div>
+    </div>
+    <div class="text-center">
+      <a href="{% url 'contact:contact' %}" class="btn btn-outline-primary my-3 mr-5">Contact me </a>
+    </div>
+  </div>
+{% endblock content %}
+  

@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+  <div class="container mt-5">
+    <h1 class="text-warning border-bottom mt-5">Contact</h1>
+    <p style="color: silver;" class="text-center mb-0">In case you have any question? Feel free to contact.</p>
+    <div class="row text-white">
+      <div class="col-sm-6">
+        <form action="" method="post" class="text-white">
+          {{ form|crispy }}
+          {% csrf_token %}
+          <input type="submit" value="Send message" class="btn btn-outline-primary mb-5">
+        </form>
+      </div>
+      <div class="col-sm-3 offset-sm-2 text-center">
+        <ul class="list-unstyled">
+          <li>
+            <i class="fas fa-map-marker-alt fa-2x i-color"></i>
+            <p>Jodhpur, Rajasthan, India</p>
+          </li>
+          <li>
+            <i class="fas fa-phone mt-4 fa-2x i-color"></i>
+            <p>+91 7742276618</p>
+          </li>
+          <li>
+            <i class="fas fa-envelope mt-4 fa-2x i-color"></i>
+            <p>sheraramprajapat1998@gmail.com</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+      <div class="text-center mt-1">
+        <a href="mailto:sheraramprajapat1998@gmail.com" target="_blank" class="fas fa-envelope fa-3x i-color mr-3"></a>
+        <a href="https://www.instagram.com/sheraramprajapat1998/" target="_blank" class="fab fa-instagram fa-3x i-color mr-3"></a>
+        <a href="www.linkedin.com/in/SheraramPrajapat1998" target="_blank" class="fab fa-linkedin fa-3x  i-color mr-3"></a>
+        <a href="https://github.com/SheraramPrajapat1998/" target="_blank" class="fab fa-github fa-3x i-color mr-3"></a>
+      </div>
+  </div>
+{% endblock content %}
+  
